@@ -1,0 +1,47 @@
+DATALOADER:
+  NUM_WORKERS: 8
+DATASET:
+  AUGMENTATION:
+    FLIPS: true
+  MODALITIES:
+    2D_RGB: false
+    3D_LABEL: true
+    3D_OCCLUDED: true
+    3D_OCCUPANCY: true
+    3D_POINT: true
+  ROOT_DIR: /media/qq/0CBE052B0CBE052B/dataset/GYF/SemanticKITTI/data_odometry_velodyne
+  SPLIT:
+    TRAIN: 4071
+    VAL: 4071
+  TYPE: SemanticKITTI
+MODEL:
+  TYPE: SSA_SC_MREF
+OPTIMIZER:
+  BASE_LR: 0.001
+  BETA1: 0.9
+  BETA2: 0.999
+  MOMENTUM: 0.9
+  TYPE: Adan
+  WEIGHT_DECAY: 0.005
+OUTPUT:
+  BEST_LOSS: 999
+  BEST_METRIC: 0.2
+  OUTPUT_PATH: /media/qq/0B980F580B980F58/SSC_OUT/JustValFastExp/BIN_255_Best_SIM
+  OUT_ROOT: /media/qq/0B980F580B980F58/SSC_OUT
+SCHEDULER:
+  FREQUENCY: epoch
+  LR_POWER: 0.98
+  TYPE: power_iteration
+STATUS:
+  BEST_METRIC: /media/qq/0B980F580B980F58/SSC_OUT/JustValFastExp/BIN_255_Best_SIM/chkpt/best-metric
+  CONFIG: /home/qq/code/gyf/BIN/SSC_configs/examples/SSA_SC_MREF.yaml
+  LAST: null
+  RESUME: false
+TRAIN:
+  BATCH_SIZE: 2
+  CHECKPOINT_PERIOD: 80
+  EPOCHS: 80
+  SUMMARY_PERIOD: 50
+VAL:
+  BATCH_SIZE: 2
+  SUMMARY_PERIOD: 50
