@@ -1,6 +1,0 @@
-https://zhuanlan.zhihu.com/p/514841494
-
-https://www.jb51.net/article/208414.htm
-
-
-2022-11-23 18:33:50.405 | INFO     | __main__:validate:224 - => Passing the network on the validation set...
