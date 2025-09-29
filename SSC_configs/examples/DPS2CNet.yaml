@@ -1,0 +1,47 @@
+DATALOADER:
+  NUM_WORKERS: 8
+DATASET:
+  AUGMENTATION:
+    FLIPS: true
+  MODALITIES:
+    2D_RGB: false
+    3D_LABEL: true
+    3D_OCCLUDED: false
+    3D_OCCUPANCY: true
+    3D_POINT: true
+  ROOT_DIR: /home/ubuntu/Dataset/kzw/SSC/sscbench-kitti/data
+  SPLIT:
+    TRAIN: 10295
+    VAL: 2165
+  TYPE: SemanticKITTI
+MODEL:
+  TYPE: SSA_SC_MREF
+OPTIMIZER:
+  BASE_LR: 0.001
+  BETA1: 0.9
+  BETA2: 0.999
+  MOMENTUM: 0.9
+  TYPE: Adan
+  WEIGHT_DECAY: 0.0001
+OUTPUT:
+  BEST_LOSS: 2.07291316986084
+  BEST_METRIC: 0.2175093004205634
+  OUTPUT_PATH: /home/ubuntu/log/kzw/kaiyuan
+  OUT_ROOT: /home/ubuntu/log/kzw
+SCHEDULER:
+  FREQUENCY: iteration
+  LR_POWER: 0.98
+  TYPE: cosine_warmup
+STATUS:
+  BEST_METRIC: /home/ubuntu/log/kzw/kaiyuan/chkpt/best-metric
+  CONFIG: /home/ubuntu/Code/kzw/base_double/SSC_configs/examples/DPS2CNet.yaml
+  LAST: null
+  RESUME: false
+TRAIN:
+  BATCH_SIZE: 2
+  CHECKPOINT_PERIOD: 5
+  EPOCHS: 80
+  SUMMARY_PERIOD: 50
+VAL:
+  BATCH_SIZE: 2
+  SUMMARY_PERIOD: 50
