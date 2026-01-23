@@ -1,5 +1,5 @@
 # DPS2CNet
-The pytorch implementation for DPS2CNet in paper ["A Dual-Path Network for Semantic Scene Completion of Single-Frame LiDAR Point Clouds"]([https://ieeexplore.ieee.org/document/10736661?source=authoralert](https://www.sciencedirect.com/science/article/pii/S1569843225006673))on ["International Journal of Applied Earth Observation and Geoinformation "](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36).
+The pytorch implementation for DPS2CNet in paper ["A Dual-Path Network for Semantic Scene Completion of Single-Frame LiDAR Point Clouds"](https://ieeexplore.ieee.org/document/10736661?source=authoralert)on ["International Journal of Applied Earth Observation and Geoinformation "](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36).
 ## A Dual-Path Network for Semantic Scene Completion of Single-Frame LiDAR Point Clouds
 
 ![](figure/Network_01.png)
