@@ -49,6 +49,11 @@ The pytorch implementation for DPS2CNet in paper ["A Dual-Path Network for Seman
         └── 21/
 	    └── ...
 ```
+# Train
+```
+python train.py
+
+```
 
 # Citation
 If you find this repo useful for your research, please consider citing the paper as follows:
