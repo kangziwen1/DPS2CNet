@@ -4,6 +4,40 @@ The pytorch implementation for DPS2CNet in paper ["A Dual-Path Network for Seman
 
 ![](figure/Network_01.png)
 
+## Data Preparation
+
+### SemanticKITTI
+```
+./
+├── 
+├── ...
+└── path_to_data_shown_in_config/
+    ├──sequences
+        ├── 00/           
+        │   ├── velodyne/	
+        |   |	├── 000000.bin
+        |   |	├── 000001.bin
+        |   |	└── ...
+        │   └── labels/ 
+        |       ├── 000000.label
+        |       ├── 000001.label
+        |       └── ...
+        │   └── voxels/ 
+        |       ├── 000000.bin
+        |       ├── 000000.label
+        |       ├── 000000.invalid
+        |       ├── 000000.occluded
+        |       ├── 000001.bin
+        |       ├── 000001.label
+        |       ├── 000001.invalid
+        |       ├── 000001.occluded
+        |       └── ...
+        ├── 08/ # for validation
+        ├── 11/ # 11-21 for testing
+        └── 21/
+	    └── ...
+```
+
 # Citation
 If you find this repo useful for your research, please consider citing the paper as follows:
 ```
