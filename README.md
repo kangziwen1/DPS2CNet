@@ -4,6 +4,18 @@ The pytorch implementation for DPS2CNet in paper ["A Dual-Path Network for Seman
 
 ![](figure/Network_01.png)
 
+## Installation
+
+### Requirements
+- PyTorch
+- pyyaml
+- mmcv>=2.1.0
+- tqdm
+- numba
+- mmsegmentation
+- torch-scatter
+- spconv >= 2.1
+
 ## Data Preparation
 
 ### SemanticKITTI
